@@ -2,7 +2,6 @@ import { gsap } from "gsap";
 import { useState } from 'react';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrambleTextPlugin } from "gsap-trial/all";
 import avatar from './assets/stickman.png';
 
 gsap.registerPlugin(ScrollTrigger, ScrambleTextPlugin);
@@ -49,26 +48,6 @@ useGSAP(() => {
     duration: 200
   });
 
-    const words = ["Web Cooker", "Web Magician", "Web Developer"];
-      const master_i_loop = gsap.timeline({ repeat: -1});
-      words.forEach((word) => {
-      const i_loop = gsap.timeline({ 
-        repeat: 1,
-        yoyo: true,
-        repeatDelay: 1,
-        ease: "power2.inOut"
-      });
-        i_loop.to(".my-role",{
-          duration: 2,
-          scrambleText: {
-            text: word,
-            chars: "011000111",
-            revealDelay: 0.5
-          }
-        });
-        master_i_loop.add(i_loop);
-      });
-
   const root = document.documentElement;
    if (isDarkMode){
       root.classList.add("dark");
@@ -86,7 +65,7 @@ useGSAP(() => {
             <img src={avatar} className="mx-auto my-8 w-1/2 bg-change-bk" alt="profile pic of a man" />
         
             <p className="sm:text-4xl md:text-5xl lg:text-7xl font-pixel bg-gradient-to-r bg-clip-text text-5xl selection:bg-transparent]">
-            Shawn is a <span className="my-role"></span>
+            Shawn is a <span className="my-role">Web Magician</span>
             </p>
 
             <button

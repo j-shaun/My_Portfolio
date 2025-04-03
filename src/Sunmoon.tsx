@@ -25,7 +25,7 @@ useGSAP(() => {
 
 
 return(
-        <div className='sun-moon max-w-[600px] fixed aspect-square w-full bg-[#eb7e4d] z-0'></div>
+        <div className='sun-moon max-w-[600px] fixed aspect-square w-full bg-[#eb7e4d] -z-1'></div>
 )
 
 };

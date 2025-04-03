@@ -1,5 +1,4 @@
 import './App.css'
-import Contact from './Contact.tsx'
 import ExploreMore from './explore.tsx'
 import Footer from './Footer.tsx'
 import Hero from './Hero.tsx'

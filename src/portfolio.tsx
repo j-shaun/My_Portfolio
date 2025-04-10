@@ -105,35 +105,35 @@ timeln.to(".card-5", {
 
   return (
       <div className="cards-container flex justify-center mb-24">
-          <div className="cards relative h-[70vh] justify-center items-center flex m-auto">
+          <div className="cards relative h-[70vh] justify-center items-center flex m-auto text-center">
               <div className="card card-1 absolute h-[65vh] justify-center items-center flex flex-col text-[#eb7e4d] object-center bg-[transparent] max-w-md -translate-x-24 -translate-y-24">
               <img src={sasw} className="mx-auto"></img>
-              <span className="text-8xl pb-2">01</span>
-              <p className="text-6xl">SASW</p>
+              <span className="text-3xl xl:text-8xl md:text-4xl pb-2 pt-4 sm:pt-2">01</span>
+              <p className="text-3xl xl:text-6xl md:text-4xl sm:text-3xl">SASW</p>
               </div>
               
               <div className="card card-2 absolute h-[65vh] justify-center items-center flex flex-col text-[#eb7e4d] object-center bg-[transparent] max-w-md -translate-x-12 -translate-y-12">
               <img src={starliving} className="mx-auto"></img>
-              <span className="text-8xl pb-2">02</span>
-              <p className="text-6xl">Star Living</p>
+              <span className="text-3xl xl:text-8xl sm:text-4xl pb-2 pt-4 sm:pt-2">02</span>
+              <p className="text-3xl xl:text-6xl md:text-4xl sm:text-3xl">Star Living</p>
               </div>
 
               <div className="card card-3 absolute h-[65vh] justify-center items-center flex flex-col text-[#eb7e4d] object-center bg-[transparent] max-w-md">
               <img src={cpg} className="mx-auto"></img>
-              <span className="text-8xl pb-2">03</span>
-              <p className="text-6xl">CPG</p>
+              <span className="text-3xl xl:text-8xl sm:text-4xl pb-2 pt-4 sm:pt-2">03</span>
+              <p className="text-3xl xl:text-6xl md:text-4xl sm:text-3xl">CPG</p>
               </div>
 
               <div className="card card-4 absolute h-[65vh] justify-center items-center flex flex-col text-[#eb7e4d] object-center bg-[transparent] max-w-md translate-x-12 translate-y-12">
               <img src={hammernwrench} className="mx-auto"></img>
-              <span className="text-8xl pb-2">04</span>
-              <p className="text-6xl">Hammer & Wrench</p>
+              <span className="text-3xl xl:text-8xl sm:text-4xl pb-2 pt-4 sm:pt-2">04</span>
+              <p className="text-3xl xl:text-6xl md:text-4xl sm:text-3xl">Hammer & Wrench</p>
               </div>
 
               <div className="card card-5 absolute h-[65vh] justify-center items-center flex flex-col text-[#eb7e4d] object-center bg-[transparent] max-w-md translate-x-24 translate-y-24">
               <img src={waisg} className="mx-auto"></img>
-              <span className="text-8xl pb-2">05</span>
-              <p className="text-6xl">WAI SG</p>
+              <span className="text-3xl xl:text-8xl sm:text-4xl pb-2 pt-4 sm:pt-2">05</span>
+              <p className="text-3xl xl:text-6xl md:text-4xl sm:text-3xl">WAI SG</p>
               </div>
           </div>
       </div>

@@ -1,5 +1,5 @@
 import { gsap } from "gsap";
-import { useState } from 'react';
+// import { useState } from 'react';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import avatar from './assets/stickman.png';
@@ -9,17 +9,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() {
 
-const [isDarkMode, setIsDarkMode] = useState(false);
+// const [isDarkMode, setIsDarkMode] = useState(false);
   
-const toggleDarkMode = () => {
-    setIsDarkMode((prev) => !prev)
-    const root = document.documentElement;
-    if(!isDarkMode) {
-      root.classList.add("dark");
-    } else{
-      root.classList.remove("dark");
-    }
-  };
+// const toggleDarkMode = () => {
+//     setIsDarkMode((prev) => !prev)
+//     const root = document.documentElement;
+//     if(!isDarkMode) {
+//       root.classList.add("dark");
+//     } else{
+//       root.classList.remove("dark");
+//     }
+//   };
 
 useGSAP(() => {
    gsap.to("body",{
@@ -49,16 +49,16 @@ useGSAP(() => {
     duration: 200
   });
 
-  const root = document.documentElement;
-   if (isDarkMode){
-      root.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-   }else{
-      root.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-   }
+  // const root = document.documentElement;
+  //  if (isDarkMode){
+  //     root.classList.add("dark");
+  //     localStorage.setItem("theme", "dark");
+  //  }else{
+  //     root.classList.remove("dark");
+  //     localStorage.setItem("theme", "light");
+  //  }
 
-}, [isDarkMode]);
+}/* , [isDarkMode] */);
 
   return(
     <div className="text-center selection:bg-green-900 dark:bg-gray-900 mb-60">
@@ -69,12 +69,12 @@ useGSAP(() => {
             Shawn is a <span className="my-role">Web Magician</span>
             </p>
 
-            <button
+         {/* <button
             onClick={toggleDarkMode}
             className="darkmode-btn px-4 py-2 text-sm font-medium text-gray-900 bg-gray-200 border border-gray-300 rounded-lg shadow dark:bg-gray-700 dark:text-gray-100 dark:border-gray-600 hover:bg-gray-300 dark:hover:bg-gray-600"
-        >
+           >
             {isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
-        </button> 
+         </button>    */}
 
         <div className="text-4xl items-center flex flex-col mt-40">
           About Me

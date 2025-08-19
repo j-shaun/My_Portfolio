@@ -11,6 +11,7 @@ useGSAP(() => {
     const tl = gsap.timeline({
         scrollTrigger:{
             trigger: ".aboutme-container",
+            marker: false,
             start: "top-=200 top",
             end: 'bottom',     
             scrub: 1,

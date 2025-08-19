@@ -25,7 +25,7 @@ useGSAP(() => {
    gsap.to("body",{
     scrollTrigger: {
       trigger: ".bg-change-bk",
-      markers: true,
+      markers: false,
       start: "top",
       end: "bottom bottom-=100px",
       scrub: 1,
@@ -39,7 +39,7 @@ useGSAP(() => {
   gsap.to(".sun-moon",{
     scrollTrigger: {
       trigger: ".bg-change-bk",
-      markers: true,
+      markers: false,
       start: "top",
       end: "bottom bottom-=100px",
       scrub: 1,

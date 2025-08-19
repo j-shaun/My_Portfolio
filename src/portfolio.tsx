@@ -19,7 +19,7 @@ function Portfolio (){
           start: "left-=120px left",
           end: "+=2550",
           scrub: 1,
-          markers: true
+          markers: false
       }
     });
 
